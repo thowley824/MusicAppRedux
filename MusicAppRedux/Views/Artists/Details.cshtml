@@ -1,0 +1,47 @@
+﻿@model IEnumerable <MusicAppRedux.Models.Album>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h2>Artist Details</h2>
+
+<h3>@ViewData["Artist"]</h3>
+
+<p>
+    @ViewData["Bio"]
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre.Name)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+     <a asp-controller="Artists" asp-action="Index">Back to List</a>
+</div>

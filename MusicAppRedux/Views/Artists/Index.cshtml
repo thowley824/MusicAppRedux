@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MusicAppRedux.Models.Artist>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index: Artists</h2>
+
+<p>
+    <a asp-action="Create">Add New Artist</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Artist
+            </th>
+            <th>
+                Biographical Info
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ArtistID">@Html.DisplayFor(modelItem => item.Name)</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bio)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ArtistID">Edit</a> |
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    Click on any of the artists listed above to display a list of all albums by that particular artist.
+</p>

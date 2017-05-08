@@ -1,0 +1,33 @@
+﻿.@model MusicAppRedux.Models.AccountViewModels.UserProfileViewModel
+
+
+<h2>User Profile</h2>
+
+<form asp-controller="Account" asp-action="EditProfile" asp-route-returnurl=null method="post" class="form-horizontal">
+    <h4>Edit User Information</h4>
+    <hr />
+    <div class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="Email" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input readonly asp-for="Email" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserGenreID" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <select asp-for="UserGenreID" class="form-control" asp-items ="@ViewBag.GenreList"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <button type="submit" class="btn btn-default">Submit Change</button> 
+            </div>
+     </div>
+</form>
+
+
+@section Scripts
+{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
