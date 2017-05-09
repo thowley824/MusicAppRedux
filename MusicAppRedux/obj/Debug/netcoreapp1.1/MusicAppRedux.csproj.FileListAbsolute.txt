@@ -9,3 +9,14 @@ C:\Users\Suzy\Documents\Visual Studio 2017\Projects\MusicAppRedux\MusicAppRedux\
 C:\Users\Suzy\Documents\Visual Studio 2017\Projects\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.pdb
 C:\Users\Suzy\Documents\Visual Studio 2017\Projects\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.dll
 C:\Users\Suzy\Documents\Visual Studio 2017\Projects\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.pdb
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.deps.json
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.runtimeconfig.json
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.runtimeconfig.dev.json
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.dll
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\bin\Debug\netcoreapp1.1\MusicAppRedux.pdb
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.csprojResolveAssemblyReference.cache
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.AssemblyInfo.cs
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.dll
+C:\Users\howleyt\Source\Repos\MusicAppRedux\MusicAppRedux\obj\Debug\netcoreapp1.1\MusicAppRedux.pdb

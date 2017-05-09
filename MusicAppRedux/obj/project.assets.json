@@ -10790,15 +10790,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Suzy\\.nuget\\packages\\": {}
+    "C:\\Users\\howleyt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suzy\\Documents\\Visual Studio 2017\\Projects\\MusicAppRedux\\MusicAppRedux\\MusicAppRedux.csproj",
+      "projectUniqueName": "C:\\Users\\howleyt\\Source\\Repos\\MusicAppRedux\\MusicAppRedux\\MusicAppRedux.csproj",
       "projectName": "MusicAppRedux",
-      "projectPath": "C:\\Users\\Suzy\\Documents\\Visual Studio 2017\\Projects\\MusicAppRedux\\MusicAppRedux\\MusicAppRedux.csproj",
-      "outputPath": "C:\\Users\\Suzy\\Documents\\Visual Studio 2017\\Projects\\MusicAppRedux\\MusicAppRedux\\obj\\",
+      "projectPath": "C:\\Users\\howleyt\\Source\\Repos\\MusicAppRedux\\MusicAppRedux\\MusicAppRedux.csproj",
+      "outputPath": "C:\\Users\\howleyt\\Source\\Repos\\MusicAppRedux\\MusicAppRedux\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
