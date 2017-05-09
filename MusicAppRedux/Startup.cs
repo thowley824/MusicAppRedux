@@ -9,7 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MusicAppRedux.Models;
+using MusicAppRedux.Controllers;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
+using MusicAppRedux.Controllers.WebAPI;
 
 namespace MusicAppRedux
 {
@@ -33,6 +36,8 @@ namespace MusicAppRedux
             // Add framework services.
             services.AddDbContext<MusicDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+           // services.AddTransient<SimpleAlbumController>();
+           // services.AddScoped<IAlbumRepository, AlbumService>();
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<MusicDbContext>()
@@ -40,11 +45,11 @@ namespace MusicAppRedux
 
             services.Configure<IdentityOptions>(options =>
             {
-                options.Password.RequireDigit = true;
-                options.Password.RequiredLength = 6;
-                options.Password.RequireUppercase = true;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireDigit = true;
+            options.Password.RequiredLength = 6;
+            options.Password.RequireUppercase = true;
+            options.Password.RequireLowercase = false;
+            options.Password.RequireNonAlphanumeric = false;
             });
             services.AddMvc();
         }
@@ -55,16 +60,17 @@ namespace MusicAppRedux
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            if (env.IsDevelopment())
-            {
+          //if (env.IsDevelopment())
+          //{
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+          //    app.UseBrowserLink();
+          //}
+          //else
+          //{
+          //    app.UseExceptionHandler("/Home/Error");
+         //}
 
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseIdentity();
 
@@ -73,6 +79,12 @@ namespace MusicAppRedux
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });
+            app.Run(async context =>
+            {
+                context.Response.StatusCode = 200;
+                context.Response.ContentType = "text/html";
+                await context.Response.SendFileAsync("./wwwroot/index.html");
             });
         }
     }

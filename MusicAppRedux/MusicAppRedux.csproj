@@ -10,9 +10,33 @@
     <ApplicationIcon />
     <Win32Resource />
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\app\albums\albumdetail.component.html" />
+    <Content Include="wwwroot\app\albums\albumdetail.component.ts" />
+    <Content Include="wwwroot\app\albums\albumdetail.html" />
+    <Content Include="wwwroot\app\albums\albumtable.component.html" />
+    <Content Include="wwwroot\app\albums\albumtable.component.ts" />
+    <Content Include="wwwroot\app\albums\albumtable.html" />
+    <Content Include="wwwroot\app\albums\albumtable.ts" />
+    <Content Include="wwwroot\app\app.component.css" />
+    <Content Include="wwwroot\app\app.component.html" />
+    <Content Include="wwwroot\app\app.component.ts" />
+    <Content Include="wwwroot\app\app.module.ts" />
+    <Content Include="wwwroot\app\components\app\app.component.css" />
+    <Content Include="wwwroot\app\components\app\app.component.html" />
+    <Content Include="wwwroot\app\components\app\app.component.ts" />
+    <Content Include="wwwroot\app\home\home.component.html" />
+    <Content Include="wwwroot\app\home\home.component.ts" />
+    <Content Include="wwwroot\app\navigation.component.ts" />
+    <Content Include="wwwroot\app\navigation\navigation.component.css" />
+    <Content Include="wwwroot\app\navigation\navigation.component.html" />
+    <Content Include="wwwroot\app\navigation\navigation.component.ts" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Routing" Version="1.0.1" />
